@@ -482,6 +482,9 @@ class BaseAviary(gym.Env):
         p.setAdditionalSearchPath(pybullet_data.getDataPath(), physicsClientId=self.CLIENT)
         #### Load ground plane, drone and obstacles models #########
         self.PLANE_ID = p.loadURDF("plane.urdf", physicsClientId=self.CLIENT)
+        a_0=os.path.abspath(__file__)
+        a = os.path.dirname(os.path.abspath(__file__))
+        b=os.path.dirname(os.path.abspath(__file__))+"/../assets/"+self.URDF
         self.DRONE_IDS = np.array([p.loadURDF(os.path.dirname(os.path.abspath(__file__))+"/../assets/"+self.URDF,
                                               self.INIT_XYZS[i,:],
                                               p.getQuaternionFromEuler(self.INIT_RPYS[i,:]),
