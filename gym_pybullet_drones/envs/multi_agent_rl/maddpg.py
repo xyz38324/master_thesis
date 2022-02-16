@@ -3,6 +3,8 @@ import torch
 import torch as T
 import torch.nn.functional as F
 import torch.nn as nn
+import sys 
+sys.path.append('/content/drive/MyDrive/xyz_master/master_thesis')
 from Agent import Agent
 class MADDPG:
     def __init__(self, actor_dims, critic_dims, n_agents, n_actions,alpha,beta,gamma,tau,chkpt_dir,evaluate,fc1=64,fc2=64):

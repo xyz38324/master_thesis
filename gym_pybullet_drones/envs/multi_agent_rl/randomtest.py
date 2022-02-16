@@ -1,5 +1,7 @@
 import  pybullet as p
 import time
+import sys 
+sys.path.append('/content/drive/MyDrive/xyz_master/master_thesis')
 from gym_pybullet_drones.envs.multi_agent_rl.xyzMultiAviary import xyzMultiAviary
 import gym
 import numpy as np

@@ -1,5 +1,6 @@
 import numpy as np
-
+import sys 
+sys.path.append('/content/drive/MyDrive/xyz_master/master_thesis')
 from maddpg import MADDPG
 from Buffer import MultiAgentReplayBuffer
 from  xyzMultiAviary import xyzMultiAviary

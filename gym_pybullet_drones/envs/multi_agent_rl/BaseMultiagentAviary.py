@@ -3,6 +3,8 @@ from datetime import datetime
 import numpy as np
 import pybullet as p
 from gym import spaces
+import sys 
+sys.path.append('/content/drive/MyDrive/xyz_master/master_thesis')
 from ray.rllib.env.multi_agent_env import MultiAgentEnv, ENV_STATE
 
 from gym_pybullet_drones.envs.BaseAviary import DroneModel, Physics, BaseAviary

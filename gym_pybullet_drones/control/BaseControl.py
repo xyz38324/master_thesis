@@ -5,7 +5,8 @@ import pybullet as p
 from enum import Enum
 import xml.etree.ElementTree as etxml
 from scipy.spatial.transform import Rotation
-
+import sys 
+sys.path.append('/content/drive/MyDrive/xyz_master/master_thesis')
 from gym_pybullet_drones.envs.BaseAviary import DroneModel, BaseAviary
 
 class BaseControl(object):

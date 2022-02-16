@@ -1,7 +1,8 @@
 import math
 import numpy as np
 import pybullet as p
-
+import sys 
+sys.path.append('/content/drive/MyDrive/xyz_master/master_thesis')
 from gym_pybullet_drones.control.BaseControl import BaseControl
 from gym_pybullet_drones.envs.BaseAviary import DroneModel, BaseAviary
 from gym_pybullet_drones.utils.utils import nnlsRPM

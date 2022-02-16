@@ -1,6 +1,8 @@
 import os
 from sys import platform
 import time
+import sys 
+sys.path.append('/content/drive/MyDrive/xyz_master/master_thesis')
 import collections
 from datetime import datetime
 from enum import Enum

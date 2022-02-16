@@ -1,4 +1,6 @@
 import torch as T
+import sys 
+sys.path.append('/content/drive/MyDrive/xyz_master/master_thesis')
 from xyzModel import CriticNetwork,ActorNetwork
 class Agent:
     def __init__(self, actor_dims, critic_dims, n_actions, n_agents, agent_idx, chkpt_dir,

@@ -1,5 +1,6 @@
 import numpy as np
-
+import sys 
+sys.path.append('/content/drive/MyDrive/xyz_master/master_thesis')
 
 class MultiAgentReplayBuffer:
     def __init__(self, max_size, critic_dims, actor_dims,
